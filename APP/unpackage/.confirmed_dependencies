@@ -1,0 +1,33 @@
+{
+	"index.html": {
+		"resources": [
+			"img/10.png",
+			"img/16.png",
+			"img/08.png",
+			"swiper/swiper.animate1.0.2.min.js",
+			"img/17.png",
+			"img/14.png",
+			"img/03.png",
+			"swiper/animate.min.css",
+			"img/04.png",
+			"img/13.png",
+			"img/07.png",
+			"img/12.jpg",
+			"img/09.png",
+			"css/index.css",
+			"img/02.png",
+			"img/15.png",
+			"img/11.png",
+			"swiper/swiper-3.3.1.min.js",
+			"swiper/swiper-3.3.1.min.css",
+			"img/05.png",
+			"img/06.png",
+			"img/01.png",
+			"js/index.js",
+			"img/1.mp3",
+			"img/music.png",
+			"swiper/swiper-3.3.1.jquery.min.js",
+			"js/jquery-1.11.0.min.js"
+		]
+	}
+}

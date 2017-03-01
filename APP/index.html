@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="swiper/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="swiper/animate.min.css" />
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    
+</head>
+<body>
+	<div class="music">
+		<audio src="img/1.mp3" autoplay="autoplay" id="audio"></audio>
+		<img src="img/music.png"/>
+	</div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide one_img">
+	        	<div class="ones_img ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="0.5s"><img src="img/02.png"/></div>
+	        	<div class="ones1_img ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.7s" swiper-animate-delay="0.6s"><img src="img/04.png"/></div>
+	        	<div class="ones2_img ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.6s">
+	        		<img class="ye1" src="img/03.png"/>
+	        	</div>	
+	        	<div class="ones3_img ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.6s">
+	        		<img class="ye2" src="img/05.png"/>
+	        	</div>
+	        	<div class="ones4_img ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.6s">
+	        		<img class="ye3" src="img/06.png"/>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide two_img">
+	        	<div class="twos_img ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="0.5s"><img src="img/08.png"/></div>
+	        	<div class="twos1_img ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="0.5s"><img src="img/09.png"/></div>
+	        </div>
+	        <div class="swiper-slide three_img">
+	        	<div class="threes_img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><img src="img/13.png"/></div>
+	        	<div class="threes1_img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><img src="img/14.png"/></div>
+	        	<div class="threes2_img ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><img src="img/10.png"/></div>
+	        	<div class="threes3_img ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><img src="img/11.png"/></div>
+	        </div>
+	        <div class="swiper-slide four_img">
+	        	<div class="fours_img ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="img/15.png"/></div>
+	        	<div class="fours1_img ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="img/16.png"/></div>
+	        	<div class="fours2_img ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="0.4s"><img src="img/17.png"/></div>
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="swiper/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swiper/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'vertical',
+			    loop: true,
+			    
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+					  swiperAnimateCache(swiper); //隐藏动画元素 
+					  swiperAnimate(swiper); //初始化完成开始动画
+				}, 
+				onSlideChangeEnd: function(swiper){ 
+					  swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				} 
+  		})
+    	$('body').on("touchstart",function(){
+    		$("#audio")[0].play()
+    	})
+    	$(".music").click(function (){
+    		$("#audio")[0].play()
+    	})
+    </script>
+</html>

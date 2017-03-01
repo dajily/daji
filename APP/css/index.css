@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+.one_img{
+	background: url(../img/01.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.ones_img{
+	width: 9.79rem;
+	/*height: 1.91rem;*/
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 15%;
+}
+.ones_img img{
+	width: 100%;
+	display: block;
+}
+.ones1_img{
+	width: 5.6rem;
+	position: absolute;
+	top: 50%;
+	left: 22%;
+}
+.ones1_img img{
+	width: 100%;
+	display: block;
+}
+.ones2_img{
+	width: 2.48rem;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+}
+.ones2_img img{
+	width: 100%;
+	display: block;
+}
+.ones3_img{
+	width: 2.48rem;
+	position: absolute;
+	left: 12%;
+	top: 70%;
+}
+.ones3_img img{
+	width: 100%;
+	display: block;
+}
+.ones4_img{
+	width: 2.48rem;
+	position: absolute;
+	left: 60%;
+	top: 70%;
+}
+.ones4_img img{
+	width: 100%;
+	display: block;
+}
+.two_img{
+	background: url(../img/07.png) no-repeat;
+	background-size: 100% 100%;
+}
+.twos_img{
+	width: 7.76rem;
+	margin-top: 20%;
+	margin-left: 5%;
+}
+.twos_img img{
+	width: 100%;
+	display: block;
+}
+.twos1_img{
+	width: 7.18rem;
+	margin-left: 15%;
+	margin-top: -10%;
+}
+.twos1_img img{
+	width: 100%;
+	display: block;
+}
+.three_img{
+	background: purple;
+	width: 100%;
+	height: 100%;
+}
+.threes2_img{
+	width: 5.32rem;
+	position: absolute;
+	top: 35%;
+	left: 30%;
+}
+.threes2_img img{
+	width: 100%;
+	display: block;
+}
+.threes3_img{
+	width: 7.64rem;
+	position: absolute;
+	top: 77%;
+	left: 13%;
+}
+.threes3_img img{
+	width: 100%;
+	display: block;
+}
+.threes1_img{
+	width: 1.8rem;
+	position: absolute;
+	top: 35%;
+	left: 25%;
+}
+.threes1_img img{
+	width: 100%;
+	display: block;
+}
+.threes_img{
+	width: 3.65rem;
+	position: absolute;
+	top: 25%;
+	left: 13%;
+}
+.threes_img img{
+	width: 100%;
+	display: block;
+	transform: rotate(-20deg);
+}
+.four_img{
+	background: url(../img/12.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.fours_img{
+	width: 9.22rem;
+	margin-top: 32%;
+}
+.fours_img img{
+	width: 100%;
+	display: block;
+}
+.fours1_img{
+	width: 12.57rem;
+	position: absolute;
+	left: -20%;
+	top: 50%;
+}
+.fours1_img img{
+	width: 100%;
+	display: block;
+}
+.fours2_img{
+	width: 4.35rem;
+	position: absolute;
+	top: 69%;
+	left: 43%;
+}
+.fours2_img img{
+	width: 100%;
+	display: block;
+}
+.music{
+	width: 0.8rem;
+	position: absolute;
+	top: 7%;
+	left: 83%;
+	z-index: 10;
+}
+@-webkit-keyframes fn{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.music img{
+	width: 100%;
+	display: block;
+	animation: fn linear 2s infinite;
+	
+}
